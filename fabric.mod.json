@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "obsidian",
+	"version": "1.0.0",
+	"name": "obsidian",
+	"description": "best dlc",
+	"authors": [
+		"sfk, prince"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/obsidian/icon.png",
+	"environment": "*",
+	"jars": [
+		{
+			"file": "META-INF/jars/baritone-api-fabric-1.13.1.jar"
+		}
+	],
+	"entrypoints": {
+		"main": [
+			"wtf.obsidian.Obsidian::INSTANCE"
+		]
+	},
+	"mixins": [
+		"obsidian.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.18.4",
+		"minecraft": "~1.21.4",
+		"java": ">=21",
+		"fabric-api": "*",
+		"baritone": "*"
+	}
+}
